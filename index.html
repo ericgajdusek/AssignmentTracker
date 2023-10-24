@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assignment Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Assignment Tracker</div>
+        <div class="side1">View By</div>
+        <div class="table">
+            <table id="main-table">
+                <tr class="head-row">
+                    <th class="status-th">Done</th>
+                    <th class="assignment-th">Assignment</th>
+                    <th class="due-date-th">Due Date</th>
+                    <th class="class-th">Class</th>
+                    <th class="btn-th"></th>
+                </tr>
+                <tr>
+                    <td class="status-td">
+                        <input class="checkbox" type="checkbox"></input>
+                    </td>
+                    <td class="assignment-td" contenteditable="true"></td>
+                    <td class="due-date-td" contenteditable="true"></td>
+                    <td class="class-td" contenteditable="true"></td>
+                    <td class="td-btn">
+                        <button class="edit-btn table-btn">Edit</button>
+                        <button class="delete-btn table-btn">Delete</button>
+                    </td>
+                </tr>
+            </table>
+            <button class="add-btn" onclick="addAssignment()">+ Add new assignment</button>
+        </div>
+        <div class="side2">Grades</div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

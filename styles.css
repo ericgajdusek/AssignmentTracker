@@ -1,0 +1,125 @@
+.container {
+    height: 100vh;
+    background-color: darkgoldenrod;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "heading heading heading"
+        "side1 table side2";
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+.heading {
+    display: flex;
+    grid-area: heading;
+    background-color: whitesmoke;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    grid-area: table;
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 10px;
+}
+
+.status-th {
+    width: 40px;
+}
+
+.assignment-th {
+    width: 400px;
+}
+
+.due-date-th {
+    width: 150px;
+}
+
+.class-th {
+    width: 150px;
+}
+.btn-th {
+    width: 70px;
+}
+
+.side1 {
+    display: flex;
+    grid-area: side1;
+    background-color: whitesmoke;
+    padding: 10px;
+    justify-content: center;
+}
+
+.side2 {
+    display: flex;
+    grid-area: side2;
+    background-color: whitesmoke;
+    padding: 10px;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    margin: 10px;
+    background-color: bisque;
+}
+.td-btn {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    align-items: center;
+}
+
+/* tr:nth-child(odd) {
+    background-color: bisque;
+} */
+.head-row {
+    background-color: rgba(158, 139, 115, 0.3);
+}
+.data-row:nth-child(even) {
+    background-color: rgba(158, 139, 115, 0.3);
+}
+th:nth-child(even) {
+    background-color: rgb(208, 184, 155, 0.5);
+}
+td:nth-child(even) {
+    background-color: rgb(208, 184, 155, 0.5);
+}
+
+tr {
+    height: 30px;
+}
+.add-btn {
+    width: 100%;
+    margin: 10px;
+}
+.table-btn {
+    height: 30px;
+    justify-content: space-around;
+    border-radius: 4px;
+}
+
+.table-btn:hover {
+    background-color: white;
+}
+
+.edit-btn{
+    background-color: rgb(0, 0, 0, 0.1);
+}
+.delete-btn {
+    background-color: rgb(216, 111, 111);
+}
+
+.status-td {
+    display: flex;
+    justify-content: center;
+}
+
